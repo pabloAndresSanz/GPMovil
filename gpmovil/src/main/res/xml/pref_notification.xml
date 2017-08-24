@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="mailEnabled"
+        android:title="@string/pref_mailEnabled" />
+
+    <EditTextPreference
+        android:dependency="mailEnabled"
+        android:key="mailHours"
+        android:title="@string/pref_hours"
+        android:defaultValue="24"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="popupEnabled"
+        android:title="@string/pref_popupEnabled" />
+
+    <EditTextPreference
+        android:dependency="popupEnabled"
+        android:key="popupMinutes"
+        android:title="@string/pref_minutes"
+        android:defaultValue="30"/>
+
+</PreferenceScreen>

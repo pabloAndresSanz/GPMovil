@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gylgroup.gpmovil.TurnosActivity"
+    tools:showIn="@layout/activity_turnos">
+
+    <TextView
+        android:id="@+id/titulo_turnos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="turnos"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/turnoslv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        ></LinearLayout>
+</ScrollView>
+    <TextView
+        android:id="@+id/mensaje_turnos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mensaje" />
+</android.support.v7.widget.LinearLayoutCompat>

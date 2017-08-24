@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context="com.gylgroup.gpmovil.DireccionActivity"
+    tools:showIn="@layout/activity_direccion">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:text="DIRECCION"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/celeste" />
+    <EditText
+        android:id="@+id/direccionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Identificador: ejemplo casa, trabajo"/>
+    <EditText
+        android:id="@+id/direccionDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:gravity="top"
+        android:hint="@string/calleNroLoc" />
+    <EditText
+        android:id="@+id/pisoDepto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="@string/pisoDepto" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/cancelarButton"
+            android:src="@drawable/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cancelarButtonHandler"/>
+        <ImageView
+            android:id="@+id/eliminarButton"
+            android:src="@drawable/borrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="eliminarButtonHandler"/>
+        <ImageView
+            android:id="@+id/validarButton"
+            android:src="@drawable/validar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="validarButtonHandler"/>
+        <ImageView
+            android:id="@+id/aceptarButton"
+            android:src="@drawable/aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="aceptarButtonHandler"/>
+    </LinearLayout>
+
+</LinearLayout>

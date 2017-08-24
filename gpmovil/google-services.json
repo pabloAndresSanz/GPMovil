@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "138068375056",
+    "firebase_url": "https://fir-gpmovil.firebaseio.com",
+    "project_id": "firebase-gpmovil",
+    "storage_bucket": "firebase-gpmovil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138068375056:android:5fe148c33dc010b2",
+        "android_client_info": {
+          "package_name": "com.gylgroup.gpmovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138068375056-8k3pegghkp5t9tlnt8k4s4ol9nnrbksv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gylgroup.gpmovil",
+            "certificate_hash": "89a1f4058f1ae48ed439fb5944279b1c398887c3"
+          }
+        },
+        {
+          "client_id": "138068375056-fuoljl28pf7mejr3r4ibp65evlc0lur8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "138068375056-udb8e6fohmc6qefkmuivqr497nq6jgh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gylgroup.gpmovil",
+            "certificate_hash": "dd6f964ffeff15053b874ffb9c2573590c1e25c0"
+          }
+        },
+        {
+          "client_id": "138068375056-jq5pq6natq6df278lfqgdk0c4ko65ipf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqnRl0-KL6koS3p1IVI39crShZ3uXWPD0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138068375056-fuoljl28pf7mejr3r4ibp65evlc0lur8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gylgroup.gpmovil.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:gravity="center"
+            android:text="BUSCAR POR CERCANIA"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:gravity="left"
+            android:text="Calcular distancia a:"
+            android:textSize="@dimen/text_size" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/controlbackground"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/localeslv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/padding"
+                android:spinnerMode="dialog" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/down" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/controlbackground"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/provinciaslv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/padding"
+                android:spinnerMode="dialog" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/down" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/controlbackground"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/especialidadeslv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/padding"
+                android:spinnerMode="dialog" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/down" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/sincoberturachk"
+            android:background="@drawable/controlbackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:text="Incluir profesionales fuera de la cobertura"
+            android:textSize="@dimen/text_size" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/submit"
+            android:background="@color/celeste"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/padding"
+            android:text="BUSCAR"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
